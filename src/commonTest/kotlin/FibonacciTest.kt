@@ -1,5 +1,5 @@
 /*
- * Copyright 2025 Kazimierz Pogoda / Xemantic
+ * Copyright 2026 Kazimierz Pogoda / Xemantic
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,14 +14,16 @@
  * limitations under the License.
  */
 
-// TODO replace with your package
 package com.xemantic.template.kotlin.multiplatform
 
-// TODO replace with your code
-public object Foo {
-    public const val BAR: String = "buzz"
-}
+import kotlin.test.Test
+import kotlin.test.assertEquals
 
-public fun main() {
-    print("Hello World!")
+class FibonacciTest {
+
+    @Test
+    fun `fibonacci of 45 should be 1134903170`() {
+        assertEquals(1134903170L, fibonacci(45))
+    }
+
 }
